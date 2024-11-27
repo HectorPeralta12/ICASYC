@@ -21,6 +21,21 @@
    :prague {:warsaw 500 :krakow 300 :hamburg 900 :munich 700 :brno 300 :berlin 350}
    :berlin {:warsaw 350 :krakow 600 :hamburg 280 :munich 750 :brno 500 :prague 350}})
 
+(def current-time
+  (atom (LocalDateTime/now)))
+
+(def clock-running
+  (atom true)) ;; Flag to control when the clock stops
+
+(defn format-time []
+  ;; Format the current time for display
+  (let [formatter (DateTimeFormatter/ofPattern "HH:mm:ss")]
+    (.format @current-time formatter)))
+
+(defn update-time []
+  ;; Increment the time by 1 minute
+  (swap! current-time #(.plusSeconds % 1)))
+
 (defn transfer-products [from to amount]
   ;; Function to transfer products between cities
   (let [available-from (get-in @cities [from :current])
