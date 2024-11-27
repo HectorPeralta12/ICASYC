@@ -57,7 +57,7 @@
       (do
         (swap! cities update-in [from :current] - transfer-amount)
         (swap! cities update-in [to :current] + transfer-amount)
-        (println (str "Ride: " (name from) " > " (name to) " (" transfer-amount " cans) - Distance: "
+        (println (str "\nRide: " (name from) " > " (name to) " (" transfer-amount " cans) - Distance: "
                       (get-in distances [from to]) " km"))
         (println (str "Situation after transfer - " (name from) ": " (get-in @cities [from :current])
                       ", " (name to) ": " (get-in @cities [to :current])))
