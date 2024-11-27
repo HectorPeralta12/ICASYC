@@ -36,6 +36,16 @@
   ;; Increment the time by 1 minute
   (swap! current-time #(.plusSeconds % 1)))
 
+(defn display-clock []
+  ;; Function to display the clock
+  (loop []
+    (when @clock-running
+      (print "\r" (format-time)) ;; Print the current time
+      (flush)
+      (Thread/sleep 1000)
+      (update-time)
+      (recur)))) ;; Keep updating the time until stopped
+
 (defn transfer-products [from to amount]
   ;; Function to transfer products between cities
   (let [available-from (get-in @cities [from :current])
