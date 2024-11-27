@@ -1,5 +1,8 @@
 (ns ICA)
 
+(import [java.time LocalDateTime]
+        [java.time.format DateTimeFormatter])
+
 (def cities
   (atom {:warsaw  {:initial 450 :min 30 :max 500 :current 450}
          :krakow  {:initial 0 :min 100 :max 100 :current 0}
