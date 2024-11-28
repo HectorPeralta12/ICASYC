@@ -95,7 +95,7 @@ At startup, the program will ask:
 
 ```clojure
 (plan-routes 2000) ;; Delay in milliseconds
-
+```
 ## Future Changes
 
 While the project meets the current requirements, there are opportunities to improve its functionality in future iterations:
@@ -110,9 +110,9 @@ While the project meets the current requirements, there are opportunities to imp
    Detailed error messages and robust handling for edge cases could be added, such as invalid inputs or failed stock transfers.
 
 4. **Graphical User Interface (GUI)**  
-   User-friendly GUI could be developed to replace the current command-line interface, making the system easier for operators to navigate.
+   A user-friendly GUI could be developed to replace the current command-line interface, making the system easier for operators to navigate.
 
 5. **Scalability for Large Networks**  
-   System could be adapted to handle a larger network with more cities, warehouses, and routes while maintaining performance and efficiency.
+   The system could be adapted to handle a larger network with more cities, warehouses, and routes while maintaining performance and efficiency.
 
 
