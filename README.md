@@ -95,3 +95,24 @@ At startup, the program will ask:
 
 ```clojure
 (plan-routes 2000) ;; Delay in milliseconds
+
+## Future Changes
+
+While the project meets the current requirements, there are opportunities to improve its functionality in future iterations:
+
+1. **Dynamic Route Planning**  
+   Algorithms could be implemented to dynamically calculate the most efficient delivery routes based on real-time stock needs and distance adjustments, as the current system relies on static distances and predefined logic.
+
+2. **Database Integration**  
+   Hardcoded data could be replaced with a database system to allow for scalability, persistent storage, and easier updates.
+
+3. **Enhanced Error Handling**  
+   Detailed error messages and robust handling for edge cases could be added, such as invalid inputs or failed stock transfers.
+
+4. **Graphical User Interface (GUI)**  
+   User-friendly GUI could be developed to replace the current command-line interface, making the system easier for operators to navigate.
+
+5. **Scalability for Large Networks**  
+   System could be adapted to handle a larger network with more cities, warehouses, and routes while maintaining performance and efficiency.
+
+
