@@ -13,13 +13,13 @@
          :berlin  {:initial 150 :min 50 :max 500 :current 150}}))
 
 (def distances
-  {:warsaw {:krakow 300 :hamburg 600 :munich 800 :brno 400 :prague 500 :berlin 350}
-   :krakow {:warsaw 300 :hamburg 700 :munich 500 :brno 200 :prague 300 :berlin 600}
-   :hamburg {:warsaw 600 :krakow 700 :munich 800 :brno 1000 :prague 900 :berlin 280}
+  {:warsaw {:krakow 100 :hamburg 600 :munich 800 :brno 400 :prague 500 :berlin 300}
+   :krakow {:warsaw 100 :hamburg 700 :munich 500 :brno 200 :prague 300 :berlin 600}
+   :hamburg {:warsaw 600 :krakow 700 :munich 800 :brno 1000 :prague 900 :berlin 100}
    :munich {:warsaw 800 :krakow 500 :hamburg 800 :brno 600 :prague 700 :berlin 750}
-   :brno {:warsaw 400 :krakow 200 :hamburg 1000 :munich 600 :prague 300 :berlin 500}
-   :prague {:warsaw 500 :krakow 300 :hamburg 900 :munich 700 :brno 300 :berlin 350}
-   :berlin {:warsaw 350 :krakow 600 :hamburg 280 :munich 750 :brno 500 :prague 350}})
+   :brno {:warsaw 400 :krakow 200 :hamburg 1000 :munich 600 :prague 100 :berlin 500}
+   :prague {:warsaw 500 :krakow 300 :hamburg 900 :munich 700 :brno 100 :berlin 200}
+   :berlin {:warsaw 300 :krakow 600 :hamburg 100 :munich 750 :brno 500 :prague 200}})
 
 (def current-time
   (atom (LocalDateTime/now)))
