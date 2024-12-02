@@ -26,7 +26,7 @@
   (atom (LocalDateTime/now)))
 
 (def clock-running
-  (atom true)) ;; Flag to control when the clock stops
+  (atom true)) ;; Flag to control when the clock stopss
 
 (defn format-time []
   ;; Format the current time for display
